@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Spase Invaders Remaster</title>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+
+		<div class="btns">
+			<button id="pause">Pause</button>
+			<button id="restart">Restart</button>
+		</div>
+
+		<div id="game-ui">
+			<p><b>Score: </b><span id="score"></span></p>
+			<p><b>Lives: </b><span id="lives"></span></p>
+			<p><b>Bullets: </b><span id="bullets"></span></p>
+		</div>
+
+		<canvas id="canvas" width="860" height="480"></canvas>
+
+		<img
+			class="hidden"
+			id="thank"
+			src="./assets/tank/Hull_06_horis.png"
+			alt="Thank"
+		/>
+		<img src="./assets/tank/Gun_01.png" alt="Gun" class="hidden" id="gun" />
+		<img
+			src="./assets/tank/Medium_Shell.png"
+			alt="Bullet"
+			class="hidden"
+			id="bullet"
+		/>
+		<img src="./assets/heart.png" alt="Heart" class="hidden" id="heart" />
+		<img
+			src="./assets/enemy-tank.png"
+			alt="Enemy tank"
+			class="hidden"
+			id="enemy"
+		/>
+		<img src="./assets/coin.png" alt="Coin" class="hidden" id="coin" />
+
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
